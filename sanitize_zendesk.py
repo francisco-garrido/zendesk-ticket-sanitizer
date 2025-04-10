@@ -18,10 +18,13 @@ class TicketSanitizer:
         try:
             self.nlp = spacy.load("en_core_web_sm")
         except OSError:
-            logger.error("SpaCy model not found. Installing en_core_web_sm...")
-            import subprocess
-            subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
-            self.nlp = spacy.load("en_core_web_sm")
+            logger.error("SpaCy model not found. Please install it using:")
+            logger.error("python -m pip install spacy")
+            logger.error("python -m spacy download en_core_web_sm")
+            raise OSError(
+                "Required spaCy model 'en_core_web_sm' is not installed. "
+                "Please install it manually using the commands shown in the error log."
+            )
 
         # Load vendor whitelist if provided
         self.vendor_whitelist = self._load_vendor_whitelist(vendor_whitelist_path)
