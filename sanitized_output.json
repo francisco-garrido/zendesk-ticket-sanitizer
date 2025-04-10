@@ -1,0 +1,44 @@
+{
+  "ticket": {
+    "id": 12345,
+    "subject": "Network connectivity issues - Acme Technologies",
+    "description": "Customer Person_1 from Organization_1 reported connectivity issues with their network device at Organization_2. The affected subnet is Subnet 1.\n\nCustomer Details:\nEmail: [EMAIL]\nPhone: +1 ([PHONE]\n\nRelevant Links:\n- Device Dashboard: [URL].auvik.com/dashboard#entity/[PHONE]\n- Knowledge Base: [URL].auvik.com/hc/en-us/articles/12345\n- Cisco Documentation: [URL].cisco.com/router/config",
+    "status": "open",
+    "requester": {
+      "name": "Person_1",
+      "email": "[EMAIL]"
+    },
+    "assignee": {
+      "name": "Person_2",
+      "email": "[EMAIL]"
+    },
+    "created_at": "2024-03-20T10:00:00Z",
+    "updated_at": "2024-03-20T15:30:00Z"
+  },
+  "comments": {
+    "comments": [
+      {
+        "id": 1,
+        "type": "Comment",
+        "author_id": 123,
+        "body": "Person_3 from NetworkCo investigated the issue. Please check device at Organization_3 and subnet Subnet 2.",
+        "created_at": "2024-03-20T12:00:00Z",
+        "author": {
+          "name": "Person_3",
+          "email": "[EMAIL]"
+        }
+      },
+      {
+        "id": 2,
+        "type": "Comment",
+        "author_id": 456,
+        "body": "I've escalated this to our senior engineer Person_4 at [EMAIL].",
+        "created_at": "2024-03-20T15:30:00Z",
+        "author": {
+          "name": "Person_2",
+          "email": "[EMAIL]"
+        }
+      }
+    ]
+  }
+}

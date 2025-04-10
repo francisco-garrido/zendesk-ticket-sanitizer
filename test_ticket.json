@@ -1,0 +1,44 @@
+{
+  "ticket": {
+    "id": 12345,
+    "subject": "Network connectivity issues - Acme Technologies",
+    "description": "Customer John Smith from Acme Technologies reported connectivity issues with their network device at 192.168.1.100. The affected subnet is 10.0.0.0/24.\n\nCustomer Details:\nEmail: john.smith@acmetech.com\nPhone: +1 (555) 123-4567\n\nRelevant Links:\n- Device Dashboard: https://my.auvik.com/dashboard#entity/987654\n- Knowledge Base: https://support.auvik.com/hc/en-us/articles/12345\n- Cisco Documentation: https://www.cisco.com/router/config",
+    "status": "open",
+    "requester": {
+      "name": "John Smith",
+      "email": "john.smith@acmetech.com"
+    },
+    "assignee": {
+      "name": "Sarah Johnson",
+      "email": "sarah.j@support.com"
+    },
+    "created_at": "2024-03-20T10:00:00Z",
+    "updated_at": "2024-03-20T15:30:00Z"
+  },
+  "comments": {
+    "comments": [
+      {
+        "id": 1,
+        "type": "Comment",
+        "author_id": 123,
+        "body": "Michael Brown from NetworkCo investigated the issue. Please check device at 192.168.1.200 and subnet 172.16.0.0/16.\n\nThanks,\nMichael",
+        "created_at": "2024-03-20T12:00:00Z",
+        "author": {
+          "name": "Michael Brown",
+          "email": "michael.b@networkco.com"
+        }
+      },
+      {
+        "id": 2,
+        "type": "Comment",
+        "author_id": 456,
+        "body": "I've escalated this to our senior engineer David Wilson at david.wilson@networkco.com.\n\nRegards,\nSarah",
+        "created_at": "2024-03-20T15:30:00Z",
+        "author": {
+          "name": "Sarah Johnson",
+          "email": "sarah.j@support.com"
+        }
+      }
+    ]
+  }
+} 
